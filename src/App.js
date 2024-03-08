@@ -1,11 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Recipe from './components/Recipe';
+import RecipeContainer from './components/RecipeContainer';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='mx-5 text-3xl'>hello</h1>
-    </div>
+    <>
+    <Navbar/>
+    <RecipeContainer/>
+    </>
+    
   );
 }
 
