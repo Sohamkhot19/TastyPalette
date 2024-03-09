@@ -15,7 +15,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<RecipeContainer/>}></Route>
-        <Route path='/Recipedetail' element={<Recipedetail/>}></Route>
+        <Route path='/Recipedetail/:id' element={<Recipedetail/>} ></Route>
       </Routes>
     </Router>
     
