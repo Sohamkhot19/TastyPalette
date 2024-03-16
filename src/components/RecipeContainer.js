@@ -66,8 +66,10 @@ function RecipeContainer() {
 
 
     <h1 className='text-center px-1 py-1 font-bold text-2xl my-2'>Our Popular Recipies</h1>
-    <div className="container my-3 flex flex-wrap mx-10">      
+    {url.length === 0 && <p className="text-xl text-center mt-28 text-slate-400 font-semibold">No data found</p>}  
+    <div className="container my-3 flex flex-wrap mx-10">    
     {url.map((recipe) => (
+      
           <Recipe key={recipe.idMeal} recipe={recipe} />
         ))}
     </div>
